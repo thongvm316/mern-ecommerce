@@ -1,18 +1,17 @@
-import * as firebase from "firebase";
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/auth'
+import { getAuth } from 'firebase/auth'
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDniyhK46KyCVzN4PkypDIKjMEZLfTUx64",
-  authDomain: "ecommerce-225c8.firebaseapp.com",
-  databaseURL: "https://ecommerce-225c8.firebaseio.com",
-  projectId: "ecommerce-225c8",
-  storageBucket: "ecommerce-225c8.appspot.com",
-  messagingSenderId: "593746841585",
-  appId: "1:593746841585:web:f0090fc9296a27f7c67e50",
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  apiKey: 'AIzaSyA8SKtsPXKA-R6cIdPu3rC6UjkGZ8HwWzw',
+  authDomain: 'mern-ecommerce-baaf4.firebaseapp.com',
+  projectId: 'mern-ecommerce-baaf4',
+  storageBucket: 'mern-ecommerce-baaf4.appspot.com',
+  messagingSenderId: '1068128690773',
+  appId: '1:1068128690773:web:bb25c3785198b803f92adc',
+}
 
-// export
-export const auth = firebase.auth();
-export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+const app = firebase.initializeApp(firebaseConfig)
+
+export const auth = getAuth(app)
+export const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
