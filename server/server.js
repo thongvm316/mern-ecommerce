@@ -19,7 +19,7 @@ const app = express()
 connectDB()
 
 // middlewares
-app.use(logger) // !
+app.use(logger)
 app.use(morgan('dev')) // !
 app.use(bodyParser.json({ limit: '2mb' }))
 app.use(cors(corsOptions))
