@@ -19,3 +19,137 @@
 20220926	15:19:18	8bf61f71-842d-4d60-b435-f9c640718a9b	Error: Firebase ID token has invalid signature. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token.	POST	/api/current-user	http://localhost:3000
 20220926	15:19:36	bd0e17eb-d9c7-4d65-b118-3c79ddf95bfd	Error: Firebase ID token has invalid signature. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token.	POST	/api/create-or-update-user	http://localhost:3000
 20220926	15:23:54	8a4f3738-48a0-4867-bab6-a8c93446f2f0	Error: Firebase ID token has invalid signature. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token.	POST	/api/current-user	http://localhost:3000
+20220927	09:17:16	33e2ffc5-a8e4-4785-b198-1c9713969389	ReferenceError: path is not defined	POST	/api/create-or-update-userr	http://localhost:3000
+20220927	09:17:33	ab13defd-5e13-4c8e-b9b1-1f6949e362c8	ReferenceError: path is not defined	GET	/api/create-or-update-userr	undefined
+20220927	09:17:33	01954cd3-9a95-4158-84ee-1bfa034553e3	ReferenceError: path is not defined	GET	/favicon.ico	undefined
+20220927	09:19:59	0784e1da-e00a-48d9-873b-f662a6169a6a	ReferenceError: path is not defined	GET	/asdad	undefined
+20220927	09:21:47	d65fca86-037b-4868-b978-32daf65e2c6b	ReferenceError: path is not defined	GET	/asdad	undefined
+20220927	09:27:45	715e4c5b-228a-4f08-87ef-c8ba2ad2ea5f	ReferenceError: path is not defined	GET	/asdad	undefined
+20220927	09:32:07	23d22f38-ac03-401c-ba7b-f815cb1322e4	ReferenceError: path is not defined	GET	/asdad	undefined
+20220927	09:34:29	3a5ed9b2-9241-4655-a39f-775b76a76b21	ReferenceError: path is not defined	GET	/api/current-userr	undefined
+20220927	09:35:28	a1c583f9-bd17-4b95-b82f-0fbcf2158f10	ReferenceError: path is not defined	POST	/api/create-or-update-userr	http://localhost:3000
+20220927	09:38:44	d103eadc-ce99-4b00-b507-e4415a9ea306	ReferenceError: path is not defined	POST	/api/create-or-update-userr	http://localhost:3000
+20220927	10:05:09	6d5bad2e-c1bb-4ee8-836c-90a139b897f0	ReferenceError: path is not defined	POST	/products	undefined
+20220927	10:08:59	6a1d0aa5-f689-441f-b750-fd0658c0a29e	ReferenceError: path is not defined	POST	/api/productsa	undefined
+20220927	11:34:52	9716b1c1-6ef2-42d5-8592-4dd1df0f3064	StrictPopulateError: Cannot populate path `postedBy` because it is not in your schema. Set the `strictPopulate` option to false to override.	GET	/api/product/related/63327d48e0e73c72d2342fcc	http://localhost:3000
+20220927	11:35:07	b0bd7416-a158-4968-bcb7-40df7ed017fe	StrictPopulateError: Cannot populate path `postedBy` because it is not in your schema. Set the `strictPopulate` option to false to override.	GET	/api/product/related/63327d48e0e73c72d2342fcc	http://localhost:3000
+20220927	11:35:11	d343b2eb-f6bd-4a46-9c65-ea4f1c66787c	StrictPopulateError: Cannot populate path `postedBy` because it is not in your schema. Set the `strictPopulate` option to false to override.	GET	/api/product/related/63327d48e0e73c72d2342fcc	http://localhost:3000
+20220927	11:35:22	4e776998-641c-4ecd-b9a7-4780b39fdb77	StrictPopulateError: Cannot populate path `postedBy` because it is not in your schema. Set the `strictPopulate` option to false to override.	GET	/api/product/related/63327d48e0e73c72d2342fcc	http://localhost:3000
+20220929	10:59:30	d02386ef-f1da-49a9-9395-91fc2dc6a21f	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:10:10	1836b3e0-543e-4bf0-8e9e-2ec307686f83	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:11:10	a2bdbb1b-771a-4b1f-9045-b8c6e4684d4a	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:11:46	ac68b7f2-1547-46a8-a84e-38760eabfd92	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:21:21	d1c932d2-775c-4107-954a-a9a0047fb53b	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:21:58	40d0d2c7-efde-4ce6-973e-c9edc3df5a3d	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:00	5c30b3fa-951f-47d3-b1bf-d665bcc8bf78	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:01	41b92d51-72e4-42ff-9347-786c77692e01	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:02	d323d694-6a99-4343-890c-fcb11ec01fa5	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:03	728eefc7-e434-4be0-ab0b-6b5787d98314	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:03	3651e5d6-80c6-49d8-9817-0c86eff2efb0	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:04	78caad36-726b-4f84-824a-f0ea76a5556a	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:04	287546e5-1dd2-4689-b76f-24dbb3d148b9	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:05	ef1c9ba9-232c-44fd-8ae4-52607a008d93	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:05	1fb91280-98a4-47ea-b618-3474b3ab1a44	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:06	9077a3fc-af20-4f96-8605-7490efc475fa	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:06	6d211dc4-78a7-41ff-83af-022d4fd57d96	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:07	1f1fa643-8b9c-4f53-b990-74b4e5d418a0	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:07	44e2fc09-484d-4020-8aff-9f1fc2a15b04	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:22:30	6e63ae4d-1aca-425c-8d30-e73f870769ff	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:23:42	79746858-cefe-4f66-ab18-e09ba3528331	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	11:26:04	a0252301-32aa-4bdd-ae82-71e65eeaf880	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:26:06	51e6ea79-fdec-49ff-8d78-4ddea406e21a	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:26:07	7f96d73b-3050-48c2-b34e-c01217544300	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:26:10	717d53b9-d81b-496c-b951-a5c7b5ba9f29	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:28:00	56a38b5b-911e-4a0d-966b-b8ac01779883	MongoServerError: E11000 duplicate key error collection: test.categories index: slug_1 dup key: { slug: "samsung" }	POST	/api/category	undefined
+20220929	11:28:31	fe4959bb-1ac8-4ca8-acaa-d99c4a49a745	MongoServerError: E11000 duplicate key error collection: test.categories index: slug_1 dup key: { slug: "samsung" }	POST	/api/category	undefined
+20220929	11:28:32	ab65fc29-2693-4d83-a922-421fb9a91b15	MongoServerError: E11000 duplicate key error collection: test.categories index: slug_1 dup key: { slug: "samsung" }	POST	/api/category	undefined
+20220929	11:29:09	aa846351-567c-4cd7-ae30-42df8722e97f	MongoServerError: E11000 duplicate key error collection: test.categories index: slug_1 dup key: { slug: "acer" }	POST	/api/category	undefined
+20220929	11:30:04	8298de83-876e-478e-a88a-3c17b3aab211	MongoServerError: E11000 duplicate key error collection: test.categories index: slug_1 dup key: { slug: "acer" }	POST	/api/category	undefined
+20220929	11:32:18	0c9f56fe-645b-4254-91db-6b1955c4755a	ValidationError: Category validation failed: name: Too short	POST	/api/category	undefined
+20220929	11:32:39	8df209d1-d8ad-41d6-8f47-ec6789a52a5a	ValidationError: Category validation failed: name: Too long	POST	/api/category	undefined
+20220929	11:32:53	91ccad3f-f43c-4636-8f64-aacd07b330f1	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:33:06	71fbe59e-8ccd-461d-809a-dd6ff78119a6	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:33:08	facfa4d9-2300-48df-911b-b89b2aeceb43	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:33:32	c25f814c-8d5a-4f74-90f7-ca925296246d	ValidationError: Category validation failed: name: Name is required	POST	/api/category	undefined
+20220929	11:33:44	8e7cb3df-9b21-421e-819e-a403be952a83	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:37:31	b4a38a15-b908-4997-8908-623585659dac	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:37:35	dbf1b2ab-9c97-4ab5-bee7-1d5c0577137c	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:37:59	e8349348-4183-45e4-85b1-31dec44cdb8d	Error: slugify: string argument expected	POST	/api/category	undefined
+20220929	11:39:59	1c7c4cb2-0057-4373-98d9-b9b6c0e482df	MongoServerError: E11000 duplicate key error collection: test.categories index: slug_1 dup key: { slug: "SS" }	POST	/api/category	undefined
+20220929	13:27:58	75bb350c-71a9-4259-b6b4-c0ed0bffc353	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	13:29:10	fe4cbc05-fbb7-44bf-a6fb-942cc2d55981	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	13:29:11	a006e286-ed23-4144-95e0-7c7d1e41bbc4	Error: Invalid or expired token	POST	/api/category	undefined
+20220929	13:29:15	e4459e7a-0487-48c7-904c-9eeeec6630a3	ValidationError: Category validation failed: name: Name is required	POST	/api/category	undefined
+20220929	13:31:41	bd2b9dd5-8d05-4c41-8b55-8c74ffb698d9	Error: Admin resource. Access denied.	POST	/api/current-admin	http://localhost:3000
+20220929	13:32:04	b4c6b140-404a-4578-aacb-b37bd9e9ce4f	Error: Admin resource. Access denied.	POST	/api/category	undefined
+20220929	13:34:55	52ec1e75-53a0-416f-9a1c-14361b71b70e	ValidationError: Category validation failed: name: Name is required	POST	/api/category	undefined
+20220929	13:34:58	d001e76f-cb1b-43d6-bdfb-a9f5f8a552f7	ValidationError: Category validation failed: name: Name is required	POST	/api/category	undefined
+20220929	13:46:41	0c905ba3-8977-4f8e-9d09-5424a8ce1729	ReferenceError: path is not defined	GET	/api/categoriess	undefined
+20220929	13:56:15	827da3bd-5f46-4bf2-8415-15b328ed6d32	ReferenceError: path is not defined	GET	/api/categorie	undefined
+20220929	14:38:17	88f85226-d474-4281-b390-dbc3f1032294	ReferenceError: next is not defined	GET	/api/category/apple	undefined
+20220929	14:38:34	c0e7a3b1-1641-40c9-8294-b130e5e88c90	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:38:57	9cce87c2-0174-42ac-a669-290413454d26	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:38:59	3c43d1cc-8f33-40ee-bf18-dc75e439b3eb	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:00	84694ad0-991c-48f5-b484-e8804eab636f	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:01	3936fd12-7011-4701-8fb8-50095355296a	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:01	096c52fc-cde3-472e-94c7-c007f72e7a52	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:02	6c5f3ef4-5dbb-4f7d-9175-4d2907d8408f	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:03	3b9feb27-8c09-4b3e-b1c3-fc9e9dd2fa63	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:03	d6c71a48-0b2b-4862-9ef6-eb75c38fda94	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:04	69765532-358b-4365-9995-c8464cb9a109	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:05	f639c3c6-3615-45d9-9dc5-ce5723418ece	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:05	427ef61e-fbb6-488c-956a-fb4d76876271	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:06	4ba2e42e-cf4d-4741-9f0a-e3c6204f9b06	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:06	7639c7d7-a554-4593-b13b-b452c1230772	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:07	957bdd1d-f92f-4756-aea3-1e26ba164326	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:08	a280e050-38b7-4600-a76c-619bf87991bb	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:08	6bbaf679-9ecf-4c26-989a-684f46cea18a	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:09	da5545b6-b02f-4adc-9887-003e6f942a47	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:10	23a18db1-d805-4043-bfd0-ea646daab18c	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:10	3cbc738b-0935-4bf7-a997-6307fd38de8a	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:11	59849c8c-d3f0-4c9a-b376-dc079da12eae	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:11	94d011b7-7155-4d56-a839-2f02d891da60	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:12	36e394a7-5cb9-493e-9e8f-f83d762370e2	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:12	43a2cd28-4582-47dd-9ffb-0b7b3ceb50ea	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:35	bf969606-5e87-49ba-af18-6cc50608b343	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:37	53969ff2-7c06-4191-8ed0-506eaf47003f	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:37	6362737e-e4bc-4f21-90ec-919726d4e539	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:38	2d737785-addf-4bc7-ab6a-f69567dc21ac	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:39:39	3242c1b6-3211-4041-99c0-7d1c65434c08	CastError: Cast to ObjectId failed for value "{}" (type Object) at path "category" for model "Product"	GET	/api/category/apple	undefined
+20220929	14:57:28	88f8b371-4c16-4ab1-9ea0-ef4b4cae7704	Error: Invalid or expired token	PUT	/api/category/hp	undefined
+20220929	14:57:30	1ae831de-0f9e-4974-be8d-2e74a5a5cb66	Error: Invalid or expired token	PUT	/api/category/hp	undefined
+20220929	14:57:30	acc5c5de-b39d-4da8-b8d6-1fb935b97728	Error: Invalid or expired token	PUT	/api/category/hp	undefined
+20220929	14:57:31	71e89082-ed73-4d70-9407-45bc7abb4f97	Error: Invalid or expired token	PUT	/api/category/hp	undefined
+20220929	15:41:40	a808df60-4e8c-44fd-8c69-74192bba40d3	Error: Invalid or expired token	DELETE	/api/category/hp1	undefined
+20220929	15:41:47	dcfc402e-95e7-430f-a902-772af5fdb0a9	Error: Invalid or expired token	PUT	/api/category/hp	undefined
+20220929	15:59:49	2ef2dfb1-f854-4b3f-91c7-4c67949e0e74	CastError: Cast to ObjectId failed for value "apple" (type string) at path "parent" for model "Sub"	GET	/api/category/subs/apple	undefined
+20220929	16:00:33	3382ec0e-0565-4898-8b35-e16acfb99a28	CastError: Cast to ObjectId failed for value "apple" (type string) at path "parent" for model "Sub"	GET	/api/category/subs/apple	undefined
+20220929	16:04:50	290fb255-b8b1-4742-9455-789cf101e6bc	CastError: Cast to ObjectId failed for value "apple" (type string) at path "parent" for model "Sub"	GET	/api/category/subs/apple	undefined
+20220929	16:53:29	047ba6cf-546f-4c81-a6ab-081108299914	Error: Invalid or expired token	POST	/api/category	undefined
+20220930	09:29:24	a37e54b8-3aeb-43ab-954b-28b684a987e2	ValidationError: Sub validation failed: name: Name is required	POST	/api/sub	undefined
+20220930	09:29:49	85d41eb4-454b-4252-9c53-12dc86ed8074	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:29:52	1dc41bfa-ee11-496b-8cbe-7bd3790244b6	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:29:53	a665ec5e-a64a-41d6-a778-0f3056b7e250	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:29:53	4a1d26e1-fe57-4722-a387-2927fd72e9dc	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:29:54	62798fb9-24dd-4bd5-aa80-7772a7312a80	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:29:55	ee9047a2-8747-4077-9c89-b056ad75890f	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:29:55	66260d2b-4d78-4ce3-9e1c-1c496b3d61fe	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:29:56	4ae068b4-82cb-4665-8073-84e950890f10	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:29:56	5b06997f-12b4-4b1d-8bbe-33ef7caa7a6e	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:29:57	a550e3c2-f493-4bc1-8dab-3fbbdea2d2bb	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:29:57	0da10c40-5094-42d7-ba55-8320bf9215e0	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:29:58	b8969e86-e173-4f4e-b844-91f1096fb5dd	Error: slugify: string argument expected	POST	/api/sub	undefined
+20220930	09:33:52	66c11b3f-b413-47cd-b945-ce14715fcc0e	MongoServerError: E11000 duplicate key error collection: test.subs index: slug_1 dup key: { slug: "macbook" }	POST	/api/sub	undefined
+20220930	09:34:01	5d3a914c-657f-4d82-b7f9-94102bdeb303	SyntaxError: Unexpected token } in JSON at position 33	POST	/api/sub	undefined
+20220930	09:34:07	ade9bf82-7035-4955-a581-84bee7b00c39	ValidationError: Sub validation failed: parent: Path `parent` is required.	POST	/api/sub	undefined
+20220930	09:34:09	b6386d25-d72d-4d52-a68c-e68a08c4607b	ValidationError: Sub validation failed: parent: Path `parent` is required.	POST	/api/sub	undefined
+20220930	09:34:10	42c26cee-7234-4be7-8841-48ff1fd3ad33	ValidationError: Sub validation failed: parent: Path `parent` is required.	POST	/api/sub	undefined
+20220930	09:34:11	160c66d8-315e-489b-80f4-51b65ad9ecff	ValidationError: Sub validation failed: parent: Path `parent` is required.	POST	/api/sub	undefined
+20220930	09:34:20	a32d158f-06e9-4b28-b0d5-e499da042dcf	MongoServerError: E11000 duplicate key error collection: test.subs index: slug_1 dup key: { slug: "macbook" }	POST	/api/sub	undefined
+20220930	09:34:22	6acedfff-239f-448c-b683-2bdaf12ef89e	MongoServerError: E11000 duplicate key error collection: test.subs index: slug_1 dup key: { slug: "macbook" }	POST	/api/sub	undefined
+20220930	09:34:23	6caaf13d-f097-4621-b2b6-397447599ecf	MongoServerError: E11000 duplicate key error collection: test.subs index: slug_1 dup key: { slug: "macbook" }	POST	/api/sub	undefined
+20220930	09:34:24	ddb3eaa3-944f-4563-a006-69bbdc7eeb10	MongoServerError: E11000 duplicate key error collection: test.subs index: slug_1 dup key: { slug: "macbook" }	POST	/api/sub	undefined
+20220930	09:34:25	cfba4aec-baf3-4805-b10b-8aac73febf7e	MongoServerError: E11000 duplicate key error collection: test.subs index: slug_1 dup key: { slug: "macbook" }	POST	/api/sub	undefined
+20220930	09:47:42	91da8071-b316-49a3-b030-bc958f597253	Error: Invalid or expired token	POST	/api/uploadimages	http://localhost:3000
+20220930	10:28:54	95024ed3-12b9-4d3e-96d6-e0dc7451ba1f	Error: Invalid or expired token	POST	/api/sub	undefined
+20220930	10:37:44	3c4dfa89-a7de-4c24-a03c-29823d6f8f77	SyntaxError: Unexpected string in JSON at position 27	PUT	/api/sub/asdfaa	undefined

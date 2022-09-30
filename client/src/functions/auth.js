@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios'
 
 export const createOrUpdateUser = async (authtoken) => {
   return await axios.post(
@@ -8,9 +8,9 @@ export const createOrUpdateUser = async (authtoken) => {
       headers: {
         authtoken,
       },
-    }
-  );
-};
+    },
+  )
+}
 
 export const currentUser = async (authtoken) => {
   return await axios.post(
@@ -20,9 +20,9 @@ export const currentUser = async (authtoken) => {
       headers: {
         authtoken,
       },
-    }
-  );
-};
+    },
+  )
+}
 
 export const currentAdmin = async (authtoken) => {
   return await axios.post(
@@ -32,6 +32,6 @@ export const currentAdmin = async (authtoken) => {
       headers: {
         authtoken,
       },
-    }
-  );
-};
+    },
+  )
+}

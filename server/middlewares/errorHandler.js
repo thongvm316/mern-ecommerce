@@ -6,7 +6,7 @@ const errorHandler = (err, req, res, next) => {
     'errLog.log',
   )
 
-  const status = res.statusCode ? res.statusCode : 500 // server error
+  const status = err.statusCode || 500
 
   res.status(status).json({ message: err.message, isError: true })
 }

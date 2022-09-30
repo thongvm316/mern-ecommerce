@@ -20,11 +20,14 @@ connectDB()
 
 // middlewares
 app.use(logger)
-app.use(morgan('dev')) // !
+app.use(morgan('dev'))
 app.use(bodyParser.json({ limit: '2mb' }))
 app.use(cors(corsOptions))
+
+// routes
 readdirSync('./routes').map((r) => app.use('/api', require('./routes/' + r)))
 
+// wrong endpoint
 app.all('*', (req, res) => {
   res.status(404)
   if (req.accepts('html')) {
@@ -34,10 +37,10 @@ app.all('*', (req, res) => {
   } else {
     res.type('txt').send('404 Not Found')
   }
-}) // !
+})
 
 // error handler
-app.use(errorHandler) // !
+app.use(errorHandler)
 
 // port
 const PORT = process.env.PORT || 8000
