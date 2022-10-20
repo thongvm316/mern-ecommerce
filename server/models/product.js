@@ -29,8 +29,8 @@ const productSchema = new mongoose.Schema(
       maxlength: 32,
     },
     category: {
-      type: ObjectId, // ! why ObjectId here
-      ref: 'Category',
+      type: ObjectId,
+      ref: 'Category', // !
     },
     subs: [
       {

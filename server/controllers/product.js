@@ -4,22 +4,16 @@ const slugify = require('slugify')
 
 exports.create = async (req, res) => {
   try {
-    console.log(
-      '🚀 ~ file: product.js ~ line 8 ~ exports.create= ~ req.body',
-      req.body,
-    )
-
     req.body.slug = slugify(req.body.title)
+
     const newProduct = await new Product(req.body).save()
     res.json(newProduct)
   } catch (err) {
-    console.log(err)
-    // res.status(400).send("Create product failed");
     res.status(400).json({
       err: err.message,
     })
   }
-}
+} // done
 
 exports.listAll = async (req, res) => {
   let products = await Product.find({})
@@ -27,29 +21,28 @@ exports.listAll = async (req, res) => {
     .populate('category')
     .populate('subs')
     .sort([['createdAt', 'desc']])
-    .exec()
   res.json(products)
-}
+} // done
 
 exports.remove = async (req, res) => {
   try {
     const deleted = await Product.findOneAndRemove({
       slug: req.params.slug,
-    }).exec()
+    })
     res.json(deleted)
   } catch (err) {
     console.log(err)
     return res.staus(400).send('Product delete failed')
   }
-}
+} // done
 
 exports.read = async (req, res) => {
   const product = await Product.findOne({ slug: req.params.slug })
     .populate('category')
     .populate('subs')
-    .exec()
+
   res.json(product)
-}
+} // done
 
 exports.update = async (req, res) => {
   try {
@@ -63,31 +56,11 @@ exports.update = async (req, res) => {
     ).exec()
     res.json(updated)
   } catch (err) {
-    console.log('PRODUCT UPDATE ERROR ----> ', err)
-    // return res.status(400).send("Product update failed");
     res.status(400).json({
       err: err.message,
     })
   }
-}
-
-// WITHOUT PAGINATION
-// exports.list = async (req, res) => {
-//   try {
-//     // createdAt/updatedAt, desc/asc, 3
-//     const { sort, order, limit } = req.body;
-//     const products = await Product.find({})
-//       .populate("category")
-//       .populate("subs")
-//       .sort([[sort, order]])
-//       .limit(limit)
-//       .exec();
-
-//     res.json(products);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// };
+} // done
 
 // WITH PAGINATION
 exports.list = async (req, res) => {
@@ -103,21 +76,20 @@ exports.list = async (req, res) => {
       .populate('subs')
       .sort([[sort, order]])
       .limit(perPage)
-      .exec()
 
     res.json(products)
   } catch (err) {
     console.log(err)
   }
-}
+} // done
 
 exports.productsCount = async (req, res) => {
-  let total = await Product.find({}).estimatedDocumentCount().exec()
+  let total = await Product.find({}).estimatedDocumentCount()
   res.json(total)
-}
+} // done
 
 exports.productStar = async (req, res) => {
-  const product = await Product.findById(req.params.productId).exec()
+  const product = await Product.findById(req.params.productId)
   const user = await User.findOne({ email: req.user.email }).exec()
   const { star } = req.body
 
@@ -135,8 +107,7 @@ exports.productStar = async (req, res) => {
         $push: { ratings: { star, postedBy: user._id } },
       },
       { new: true },
-    ).exec()
-    console.log('ratingAdded', ratingAdded)
+    )
     res.json(ratingAdded)
   } else {
     // if user have already left rating, update it
@@ -146,27 +117,25 @@ exports.productStar = async (req, res) => {
       },
       { $set: { 'ratings.$.star': star } },
       { new: true },
-    ).exec()
+    )
     console.log('ratingUpdated', ratingUpdated)
     res.json(ratingUpdated)
   }
-}
+} // done
 
 exports.listRelated = async (req, res) => {
-  const product = await Product.findById(req.params.productId).exec()
+  const product = await Product.findById(req.params.productId)
 
   const related = await Product.find({
-    _id: { $ne: product._id },
-    category: product.category,
+    _id: { $ne: product._id }, // find products with paramId is not equal
+    category: product.category, // products has categoryId = category
   })
     .limit(3)
     .populate('category')
     .populate('subs')
-    .populate('postedBy')
-    .exec()
 
   res.json(related)
-}
+} // done
 
 // SERACH / FILTER
 
@@ -174,11 +143,11 @@ const handleQuery = async (req, res, query) => {
   const products = await Product.find({ $text: { $search: query } })
     .populate('category', '_id name')
     .populate('subs', '_id name')
-    .populate('postedBy', '_id name')
+    // .populate('postedBy', '_id name')
     .exec()
 
   res.json(products)
-}
+} // done
 
 const handlePrice = async (req, res, price) => {
   try {
@@ -190,28 +159,28 @@ const handlePrice = async (req, res, price) => {
     })
       .populate('category', '_id name')
       .populate('subs', '_id name')
-      .populate('postedBy', '_id name')
+      // .populate('postedBy', '_id name')
       .exec()
 
     res.json(products)
   } catch (err) {
     console.log(err)
   }
-}
+} // done
 
 const handleCategory = async (req, res, category) => {
   try {
     let products = await Product.find({ category })
       .populate('category', '_id name')
       .populate('subs', '_id name')
-      .populate('postedBy', '_id name')
+      // .populate('postedBy', '_id name')
       .exec()
 
     res.json(products)
   } catch (err) {
     console.log(err)
   }
-}
+} // done
 
 const handleStar = (req, res, stars) => {
   Product.aggregate([
@@ -244,41 +213,41 @@ const handleSub = async (req, res, sub) => {
   const products = await Product.find({ subs: sub })
     .populate('category', '_id name')
     .populate('subs', '_id name')
-    .populate('postedBy', '_id name')
+    // .populate('postedBy', '_id name')
     .exec()
 
   res.json(products)
-}
+} // done
 
 const handleShipping = async (req, res, shipping) => {
   const products = await Product.find({ shipping })
     .populate('category', '_id name')
     .populate('subs', '_id name')
-    .populate('postedBy', '_id name')
+    // .populate('postedBy', '_id name')
     .exec()
 
   res.json(products)
-}
+} // done
 
 const handleColor = async (req, res, color) => {
   const products = await Product.find({ color })
     .populate('category', '_id name')
     .populate('subs', '_id name')
-    .populate('postedBy', '_id name')
+    // .populate('postedBy', '_id name')
     .exec()
 
   res.json(products)
-}
+} // done
 
 const handleBrand = async (req, res, brand) => {
   const products = await Product.find({ brand })
     .populate('category', '_id name')
     .populate('subs', '_id name')
-    .populate('postedBy', '_id name')
+    // .populate('postedBy', '_id name')
     .exec()
 
   res.json(products)
-}
+} // done
 
 exports.searchFilters = async (req, res) => {
   const { query, price, category, stars, sub, shipping, color, brand } =
