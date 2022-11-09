@@ -226,3 +226,9 @@
 20221018	16:07:57	288372a0-8186-42ab-a338-0ac1242ff164	SyntaxError: Unexpected token / in JSON at position 7	POST	/api/search/filters	undefined
 20221018	16:08:09	dddf6289-be3d-4e43-b247-ec2878808303	SyntaxError: Unexpected token / in JSON at position 7	POST	/api/search/filters	undefined
 20221018	16:14:09	37ead446-bc6a-449d-929b-dcd48dc4baa5	StrictPopulateError: Cannot populate path `postedBy` because it is not in your schema. Set the `strictPopulate` option to false to override.	POST	/api/search/filters	http://localhost:3000
+20221020	10:20:31	aaf287f2-dae9-4ec2-9287-b6e5a60e0113	Error: Invalid or expired token	GET	/api/user/cart	undefined
+20221020	10:21:44	c8e5a27a-eaba-4ee9-b474-eb136492d175	TypeError: Cannot destructure property 'products' of 'cart' as it is null.	GET	/api/user/cart	undefined
+20221020	10:59:34	84b29c1f-72c9-4df3-96d9-152891761015	Error: Invalid or expired token	POST	/api/user/address	http://localhost:3000
+20221020	10:59:38	283112f4-c455-4453-be20-53056817736b	Error: Invalid or expired token	POST	/api/user/address	http://localhost:3000
+20221020	10:59:40	52942161-bf1f-4b23-ac2f-b7be72324d0f	Error: Invalid or expired token	POST	/api/user/address	http://localhost:3000
+20221020	11:09:21	b1367bb9-7218-44b7-ac89-d7fc64294a81	Error: Invalid or expired token	GET	/api/user/cart	undefined

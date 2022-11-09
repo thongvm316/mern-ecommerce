@@ -19,9 +19,15 @@ const {
   createCashOrder,
 } = require('../controllers/user')
 
-router.post('/user/cart', authCheck, userCart) // save cart
-router.get('/user/cart', authCheck, getUserCart) // get cart
-router.delete('/user/cart', authCheck, emptyCart) // empty cart
+// router.post('/user/cart', authCheck, userCart) // save cart
+// router.get('/user/cart', authCheck, getUserCart) // get cart
+// router.delete('/user/cart', authCheck, emptyCart) // empty cart
+
+router
+  .get('/user/cart', authCheck, getUserCart)
+  .post('/user/cart', authCheck, userCart) // done
+  .delete('/user/cart', authCheck, emptyCart)
+
 router.post('/user/address', authCheck, saveAddress)
 
 router.post('/user/order', authCheck, createOrder) // stripe
